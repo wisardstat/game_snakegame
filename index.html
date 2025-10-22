@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovation Lab - Snake Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="left-panel">
+            <h2>Innovation Lab</h2>
+            <div class="game-info">
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="timer">Time: <span id="timer">3:00</span></div>
+            </div>
+            <div class="game-over" id="gameOver" style="display: none;">
+                <h2>Game Over!</h2>
+                <p>Final Score: <span id="finalScore">0</span></p>
+            </div>
+            <div class="game-controls">
+                <button id="startButton">Start Game</button>
+                <button id="restartButton" style="display: none;">Restart Game</button>
+            </div>
+        </div>
+        <div class="center-panel">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+        <div class="right-panel">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
